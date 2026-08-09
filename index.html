@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Jayanthi V — Social Media Marketing, UI/UX Designer, Web Development, Content Creator & SEO. Computer Science graduate building clear digital experiences."/>
+  <meta name="keywords" content="Jayanthi V, UI/UX Designer, Frontend Developer, Web Development, Automation, SEO, Social Media Marketing, Content Creator"/>
+  <meta name="author" content="Jayanthi V"/>
+  
+  <!-- SEO & OpenGraph Tags -->
+  <link rel="canonical" href="https://jayanthi-portfolio.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jayanthi-portfolio.vercel.app/" />
+  <meta property="og:title" content="Jayanthi V | UI/UX Designer & Web Developer" />
+  <meta property="og:description" content="Jayanthi V — UI/UX Designer, Frontend Developer, and Social Media Marketer. Explore my portfolio of digital solutions." />
+  <meta property="og:image" content="https://jayanthi-portfolio.vercel.app/assets/hero-photo.jpg" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <!-- Google Search Console Verification (Replace with your actual code) -->
+  <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE_HERE" />
+
+  <title>Jayanthi V | UI/UX Designer &amp; Web Developer</title>
+
+  <!-- Schema.org JSON-LD for Rich Search Results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jayanthi V",
+    "jobTitle": "UI/UX Designer & Frontend Developer",
+    "url": "https://jayanthi-portfolio.vercel.app/",
+    "image": "https://jayanthi-portfolio.vercel.app/assets/hero-photo.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/jayanthi-velu-959123315/",
+      "https://github.com/Jayanthivelu",
+      "https://www.instagram.com/little_jeonsa/"
+    ]
+  }
+  </script>
+  
+  <!-- Inter & Fira Code Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">JAYANTHI <span>V.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#projects" class="nav-link">Work</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Contact Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about" class="mob-link">About</a>
+    <a href="#services" class="mob-link">Services</a>
+    <a href="#projects" class="mob-link">Work</a>
+    <a href="#experience" class="mob-link">Experience</a>
+    <a href="#contact" class="mob-link">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-container">
+    <div class="hero-left">
+      <p class="hero-greeting">&#9889; HEY, GLAD YOU’RE HERE.</p>
+      <!-- Fixed Name State -->
+      <h1 class="hero-title">I&apos;m <span class="blue">Jayanthi V</span></h1>
+      <!-- Typewriting Role Switching Every 1s (Font size matches name) -->
+      <div class="hero-typewriter-role">a <span class="blue" id="typedRole"></span><span class="cursor">|</span></div>
+      <p class="hero-desc">Thanks for taking the time to stop by. Take a look around to know more about my work, projects, and digital solutions across <strong>design, development, automation, and digital presence.</strong></p>
+      <div class="hero-btns">
+        <a href="#about" class="btn-blue">Explore &#8594;</a>
+        <a href="#services" class="btn-outline-white">View My Services &#8595;</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/jayanthi-velu-959123315/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon" title="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        </a>
+        <a href="mailto:jayanthivelu001@gmail.com" aria-label="Email" class="social-icon" title="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+        <a href="https://github.com/Jayanthivelu" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon" title="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/little_jeonsa/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon" title="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-wrap">
+        <div class="img-border"></div>
+        <img src="assets/hero-photo.jpg" alt="Jayanthi V" class="hero-photo" id="heroImage" loading="eager"/>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll Down</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="sec-header reveal-up">
+      <h2 class="sec-title">About <span class="blue">Me</span></h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-img-col">
+        <div class="about-frame" id="aboutImagePlaceholder">
+          <img src="assets/hero-photo.jpg" alt="Jayanthi V" class="about-photo" id="aboutImageTarget" loading="eager"/>
+          <div class="frame-corner tl"></div>
+          <div class="frame-corner tr"></div>
+          <div class="frame-corner bl"></div>
+          <div class="frame-corner br"></div>
+        </div>
+      </div>
+      <div class="about-text-col reveal-right">
+        <h3 class="about-headline">Design. Development. Digital.</h3>
+        <p class="about-p">Computer Science graduate working across <strong>UI/UX, frontend development, automation, and digital solutions.</strong></p>
+        <p class="about-p">Focused on turning ideas and business needs into <strong>clear, useful digital experiences.</strong></p>
+        
+        <!-- ABOUT DETAILS GRID (NAME, CGPA & EXPERIENCE REMOVED) -->
+        <div class="about-details">
+          <div class="detail-item"><span class="detail-label">Education</span><span class="detail-val">B.E. CSE (2020–2024)</span></div>
+          <div class="detail-item"><span class="detail-label">College</span><span class="detail-val">Sri Ramanujar Eng. College</span></div>
+          <div class="detail-item"><span class="detail-label">Email</span><span class="detail-val">jayanthivelu001@gmail.com</span></div>
+          <div class="detail-item"><span class="detail-label">Availability</span><span class="detail-val blue">&#9679; Open to Opportunities</span></div>
+        </div>
+        <a href="assets/Jayanthi_V_CV.pdf" download="Jayanthi_V_CV.pdf" class="btn-blue mt-24">Download My CV &#128196;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="section dark-section" id="services">
+  <div class="services-bg-glow"></div>
+  <div class="container">
+    <div class="sec-header reveal-up">
+      <h2 class="sec-title">My <span class="blue">Services</span></h2>
+      <div class="sec-line"></div>
+      <p class="sec-sub">Tailored digital solutions from design concepts to deployment and automation.</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- 1. UI/UX -->
+      <div class="service-card-jaison reveal-up" data-delay="0">
+        <div class="service-icon-box">&#127912;</div>
+        <div>
+          <h3 class="service-card-title">UI/UX Design</h3>
+          <p class="service-card-desc">Clear, usable digital interfaces.</p>
+        </div>
+      </div>
+
+      <!-- 2. Web Development -->
+      <div class="service-card-jaison reveal-up" data-delay="0.1">
+        <div class="service-icon-box">&#128187;</div>
+        <div>
+          <h3 class="service-card-title">Web Development</h3>
+          <p class="service-card-desc">Responsive websites from design to deployment.</p>
+        </div>
+      </div>
+
+      <!-- 3. Automation -->
+      <div class="service-card-jaison reveal-up" data-delay="0.2">
+        <div class="service-icon-box">&#9881;</div>
+        <div>
+          <h3 class="service-card-title">Automation</h3>
+          <p class="service-card-desc">Repetitive work turned into workflows.</p>
+        </div>
+      </div>
+
+      <!-- 4. Social Media -->
+      <div class="service-card-jaison reveal-up" data-delay="0.1">
+        <div class="service-icon-box">&#12449;</div>
+        <div>
+          <h3 class="service-card-title">Social Media</h3>
+          <p class="service-card-desc">Content, creatives, and SMM.</p>
+        </div>
+      </div>
+
+      <!-- 5. SEO -->
+      <div class="service-card-jaison reveal-up" data-delay="0.2">
+        <div class="service-icon-box">&#128200;</div>
+        <div>
+          <h3 class="service-card-title">SEO</h3>
+          <p class="service-card-desc">Better structure and search visibility.</p>
+        </div>
+      </div>
+
+      <!-- 6. Portfolio Websites -->
+      <div class="service-card-jaison reveal-up" data-delay="0.3">
+        <div class="service-icon-box">&#127760;</div>
+        <div>
+          <h3 class="service-card-title">Portfolio Websites</h3>
+          <p class="service-card-desc">Design, development, domain, deployment, and SEO.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK / PROJECTS SECTION -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="sec-header reveal-up">
+      <h2 class="sec-title">Featured <span class="blue">Work</span></h2>
+      <div class="sec-line"></div>
+      <p class="sec-sub">Showcasing intuitive designs, automated workflows, and responsive websites.</p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card reveal-up" data-delay="0">
+        <div class="project-img-box">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80&fit=crop" alt="Dataillam Website" loading="lazy"/>
+          <div class="project-badge">Web &amp; SEO</div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span>UI/UX</span><span>Development</span><span>SEO</span>
+          </div>
+          <h3 class="project-title">Dataillam Website</h3>
+          <p class="project-desc">Complete website design, frontend development, and search engine optimization.</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal-up" data-delay="0.1">
+        <div class="project-img-box">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80&fit=crop" alt="BDaaS Digital Experience" loading="lazy"/>
+          <div class="project-badge">UI/UX Design</div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span>UI/UX</span><span>Visual Communication</span>
+          </div>
+          <h3 class="project-title">BDaaS Digital Experience</h3>
+          <p class="project-desc">Intuitive interface architecture and visual branding design.</p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card reveal-up" data-delay="0.2">
+        <div class="project-img-box">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80&fit=crop" alt="Business Process Automation" loading="lazy"/>
+          <div class="project-badge">Automation</div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span>Make.com</span><span>Google Sheets</span><span>Email</span>
+          </div>
+          <h3 class="project-title">Business Process Automation</h3>
+          <p class="project-desc">Automated workflows for working hours, task reminders, and payslip dispatching.</p>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card reveal-up" data-delay="0.3">
+        <div class="project-img-box">
+          <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&q=80&fit=crop" alt="Portfolio Website" loading="lazy"/>
+          <div class="project-badge">Portfolio</div>
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span>UI/UX</span><span>Development</span><span>Vercel</span><span>SEO</span>
+          </div>
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">End-to-end design, code implementation, domain setup, and SEO indexing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<section class="section dark-section" id="experience">
+  <div class="container">
+    <div class="sec-header reveal-up">
+      <h2 class="sec-title">Work <span class="blue">Experience</span></h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal-left">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <h3 class="tl-role">Web Developer &amp; UI/UX Designer Intern</h3>
+              <p class="tl-company">DATAiLLAM &bull; Chennai</p>
+            </div>
+            <span class="tl-date">Nov 2025 – Present</span>
+          </div>
+          <p class="tl-desc">Working across website design, frontend development, process automation, and SEO optimization.</p>
+          <div class="tl-subtitle">Key Contributions:</div>
+          <ul class="tl-list">
+            <li><strong>UI/UX &amp; Web</strong> — Website design and frontend development.</li>
+            <li><strong>Automation</strong> — Working hours, task reminders, payslips.</li>
+            <li><strong>Digital</strong> — SMM, posters, presentations, lead generation.</li>
+            <li><strong>SEO</strong> — Metadata, sitemap, canonical, schema.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW CAN I HELP SECTION (SPLIT LAYOUT) -->
+<section class="help-section-open" id="help">
+  <div class="help-bg-text reveal-up">PORTFOLIO</div>
+  <div class="help-anim-bg"></div>
+  <div class="container">
+    <div class="help-split-layout reveal-up">
+      <div class="help-split-left">
+        <h4 class="help-accent-title">How Can I Help</h4>
+        <h2 class="help-main-title">Have something to build, improve, or automate?</h2>
+      </div>
+      <div class="help-split-right">
+        <p class="help-desc-text">Specialized in end-to-end digital solutions spanning intuitive UI/UX interfaces, high-performance web development, business process automation (Make.com, Google Sheets, Email), and search engine optimization (SEO).</p>
+        <div class="help-action-row">
+          <p class="help-sub-text">Let's Build Something Meaningful Together</p>
+          <a href="#contact" class="btn-blue help-btn">Let's Talk &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section dark-section" id="contact">
+  <div class="container">
+    <div class="sec-header reveal-up">
+      <h2 class="sec-title">Get In <span class="blue">Touch</span></h2>
+      <div class="sec-line"></div>
+      <p class="sec-sub">&ldquo;Focused on turning ideas and business needs into clear, useful digital experiences.&rdquo;</p>
+    </div>
+
+    <div class="contact-full-wrap reveal-up">
+      <form id="contactForm" class="cform">
+        <input type="hidden" name="access_key" value="d2b8e4e1-5768-47f4-96c9-d53808806007"/>
+        <input type="hidden" name="subject" value="New Portfolio Inquiry — Jayanthi V"/>
+        <input type="hidden" name="from_name" value="Jayanthi V Portfolio"/>
+        
+        <div class="cform-row">
+          <div class="cform-group">
+            <label for="cf-name">Full Name *</label>
+            <input type="text" id="cf-name" name="name" placeholder="Jayanthi V" required/>
+          </div>
+          <div class="cform-group">
+            <label for="cf-email">Email Address *</label>
+            <input type="email" id="cf-email" name="email" placeholder="jayanthivelu001@gmail.com" required/>
+          </div>
+        </div>
+        <div class="cform-group">
+          <label for="cf-service">Service Required *</label>
+          <select id="cf-service" name="service" required>
+            <option value="" disabled selected>Select Service</option>
+            <option value="UI/UX">UI/UX</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Automation">Automation</option>
+            <option value="Social Media">Social Media</option>
+            <option value="SEO">SEO</option>
+            <option value="Portfolio Websites">Portfolio Websites</option>
+          </select>
+        </div>
+        <div class="cform-group">
+          <label for="cf-message">Message *</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+        </div>
+        <button type="submit" class="cform-submit" id="submitBtn">
+          <span>Send Message &#9993;</span>
+        </button>
+        <p class="form-note">&#9201; I usually respond within 24–48 hours.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-container">
+    <p class="footer-copy">Copyright &copy; <span id="yr">2026</span> Jayanthi V. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/jayanthi-velu-959123315/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon" title="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+      </a>
+      <a href="mailto:jayanthivelu001@gmail.com" aria-label="Email" class="social-icon" title="Email">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+      <a href="https://github.com/Jayanthivelu" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon" title="GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/little_jeonsa/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon" title="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<button class="btt" id="btt" aria-label="Back to top">&#8679;</button>
+
+<script src="assets/cvData.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
